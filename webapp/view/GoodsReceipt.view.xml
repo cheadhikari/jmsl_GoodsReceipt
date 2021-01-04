@@ -1,0 +1,127 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form"
+	controllerName="isr.jmsl_GoodsReceipt.controller.GoodsReceipt" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="{i18n>tiGoodsReceipt}">
+		<headerContent>
+			<OverflowToolbar>
+				<ToolbarSpacer/>
+				<Button id="btnViewItems" icon="sap-icon://menu2" press="onViewItems"/>
+			</OverflowToolbar>
+		</headerContent>
+		<content>
+			<VBox class="sapUiSmallMargin">
+				<f:SimpleForm editable="true" layout="ResponsiveGridLayout">
+					<Label text="{i18n>lblPoNo}">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S3"/>
+						</layoutData>
+					</Label>
+					<Input id="inPoNo" type="Number" width="6.5rem" submit="onPoNoEnter">
+						<layoutData>
+							<l:GridData span="XL5 L5 M5 S9"/>
+						</layoutData>
+					</Input>
+					<Label text="{i18n>lblInvNo}">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S3"/>
+						</layoutData>
+					</Label>
+					<Input id="inInvNo" submit="onInvNoEnter">
+						<layoutData>
+							<l:GridData span="XL5 L5 M5 S9"/>
+						</layoutData>
+					</Input>
+					<Label text="{i18n>lblArticle}">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S3"/>
+						</layoutData>
+					</Label>
+					<Input id="inArticle" submit="onArticleEnter">
+						<layoutData>
+							<l:GridData span="XL5 L5 M5 S9"/>
+						</layoutData>
+					</Input>
+					<Label text="{i18n>lblArtDesc}">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S3"/>
+						</layoutData>
+					</Label>
+					<Text id="txtArtDesc" text="{poModel>Artdesc}">
+						<layoutData>
+							<l:GridData span="XL5 L5 M5 S9"/>
+						</layoutData>
+					</Text>
+					<Label text="{i18n>lblSled}">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S3"/>
+						</layoutData>
+					</Label>
+					<DatePicker id="dpSled" width="8rem" placeholder="ddmmyyyy" value="{poModel>Sled}" valueFormat="ddMMyyyy" displayFormat="ddMMyyyy"
+						change="onSledChanged">
+						<layoutData>
+							<l:GridData span="XL5 L5 M5 S9"/>
+						</layoutData>
+					</DatePicker>
+					<Label text="{i18n>lblOrdQty}">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S3"/>
+						</layoutData>
+					</Label>
+					<Text id="txtOrdQty" text="{poModel>Ordqty} {poModel>Orduom} {poModel>Baseqty} {poModel>Baseuom}">
+						<layoutData>
+							<l:GridData span="XL5 L5 M5 S9"/>
+						</layoutData>
+					</Text>
+					<Label text="{i18n>lblGrnQty}">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S3"/>
+						</layoutData>
+					</Label>
+					<Input id="inGrnQty" type="Number" value="{poModel>Grnqty}">
+						<layoutData>
+							<l:GridData span="XL4 L4 M4 S4"/>
+						</layoutData>
+					</Input>
+					<Text id="txtGrnUom" text="{poModel>Baseuom}">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S2"/>
+						</layoutData>
+					</Text>
+					<Button id="btnOk" press="onOk" width="4rem">
+						<layoutData>
+							<l:GridData span="XL6 L6 M6 S3"/>
+						</layoutData>
+					</Button>
+					<Label text="{i18n>lblItem}">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S3"/>
+						</layoutData>
+					</Label>
+					<Text id="txtItem" text="1 of 10">
+						<layoutData>
+							<l:GridData span="XL5 L5 M5 S9"/>
+						</layoutData>
+					</Text>
+					<Label text="{i18n>lblFinished}">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S3"/>
+						</layoutData>
+					</Label>
+					<ProgressIndicator id="piCompleted" showValue="true" state="Success">
+						<layoutData>
+							<l:GridData span="XL5 L5 M5 S9"/>
+						</layoutData>
+					</ProgressIndicator>
+				</f:SimpleForm>
+			</VBox>
+		</content>
+		<footer>
+			<OverflowToolbar>
+				<Button text="{i18n>lblClear}" type="Reject" press="onClear"/>
+				<Button id="btnPrev" icon="sap-icon://navigation-left-arrow" press="onPrev"/>
+				<ToolbarSpacer/>
+				<Button id="btnNext" icon="sap-icon://navigation-right-arrow" press="onNext"/>
+				<Button text="{i18n>lblSave}" type="Emphasized" press="onSave"/>
+			</OverflowToolbar>
+		</footer>
+	</Page>
+</mvc:View>

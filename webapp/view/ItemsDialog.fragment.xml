@@ -1,0 +1,33 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Dialog id="ItemsDialog" title="{i18n>lblPoItems}" contentWidth="100%">
+		<VBox class="sapUiSmallMargin">
+			<Table id="tabItems" items="{poModel>/}" growing="true" growingThreshold="20" growingScrollToLoad="true" sticky="ColumnHeaders">
+				<columns>
+					<Column>
+						<Text text="{i18n>lblItem}" width="2rem"></Text>
+					</Column>
+					<Column>
+						<Text text="{i18n>lblArticle}" width="auto"></Text>
+					</Column>
+					<Column>
+						<Text text="{i18n>lblStatus}" width="3rem"></Text>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem type="Navigation" press="onItemPress">
+						<cells>
+							<Text width="2rem"
+								text="{ path : 'poModel>Itemno', type : 'sap.ui.model.odata.type.String', constraints: { isDigitSequence : true, maxLength : 3 } }"/>
+							<Text width="auto" text="{poModel>Artdesc}"/>
+							<core:Icon width="3rem" src="{= ${poModel>Status} === 'S' ? 'sap-icon://accept' : 'sap-icon://decline' }"
+								color="{= ${poModel>Status} === 'S' ? '#009933' : '#cc0000' }"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</VBox>
+		<endButton>
+			<Button text="{i18n>lblClose}" press="onCloseDialog"></Button>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

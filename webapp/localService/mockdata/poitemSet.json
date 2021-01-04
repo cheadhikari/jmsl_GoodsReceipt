@@ -1,0 +1,176 @@
+{
+    "d": {
+        "results": [
+            {
+                "__metadata": {
+                    "id": "http://patron.keells.lk:8000/sap/opu/odata/sap/ZGOODSRCPT_SRV/poitemSet(Ponum='7000001362',Itemno='00020')",
+                    "uri": "http://patron.keells.lk:8000/sap/opu/odata/sap/ZGOODSRCPT_SRV/poitemSet(Ponum='7000001362',Itemno='00020')",
+                    "type": "ZGOODSRCPT_SRV.poitem"
+                },
+                "Ponum": "7000001362",
+                "Itemno": "00020",
+                "Article": "100100",
+                "Artdesc": "Anchor Milk Powder 0.4lkG",
+                "Plant": "SCCC",
+                "Stloc": "0001",
+                "Ordqty": "5.000",
+                "Orduom": "CV",
+                "Baseqty": "120",
+                "Baseuom": "EA"
+            },
+            {
+                "__metadata": {
+                    "id": "http://patron.keells.lk:8000/sap/opu/odata/sap/ZGOODSRCPT_SRV/poitemSet(Ponum='7000001362',Itemno='00010')",
+                    "uri": "http://patron.keells.lk:8000/sap/opu/odata/sap/ZGOODSRCPT_SRV/poitemSet(Ponum='7000001362',Itemno='00010')",
+                    "type": "ZGOODSRCPT_SRV.poitem"
+                },
+                "Ponum": "7000001362",
+                "Itemno": "00010",
+                "Article": "1261",
+                "Artdesc": "ACME ALUMINIUM FOIL 2.4 SQ. M",
+                "Plant": "SCCC",
+                "Stloc": "0001",
+                "Ordqty": "10.000",
+                "Orduom": "DZ",
+                "Baseqty": "120",
+                "Baseuom": "NO"
+            },
+            {
+                "__metadata": {
+                    "id": "http://patron.keells.lk:8000/sap/opu/odata/sap/ZGOODSRCPT_SRV/poitemSet(Ponum='7000001362',Itemno='00030')",
+                    "uri": "http://patron.keells.lk:8000/sap/opu/odata/sap/ZGOODSRCPT_SRV/poitemSet(Ponum='7000001362',Itemno='00030')",
+                    "type": "ZGOODSRCPT_SRV.poitem"
+                },
+                "Ponum": "7000001362",
+                "Itemno": "00030",
+                "Article": "100420",
+                "Artdesc": "SURF EXCEL W/POWDER X TRA CLEAN 1KG",
+                "Plant": "SCCC",
+                "Stloc": "0001",
+                "Ordqty": "3.000",
+                "Orduom": "CV",
+                "Baseqty": "45",
+                "Baseuom": "NO"
+            },
+            {
+                "__metadata": {
+                    "id": "http://patron.keells.lk:8000/sap/opu/odata/sap/ZGOODSRCPT_SRV/poitemSet(Ponum='7000001362',Itemno='00040')",
+                    "uri": "http://patron.keells.lk:8000/sap/opu/odata/sap/ZGOODSRCPT_SRV/poitemSet(Ponum='7000001362',Itemno='00040')",
+                    "type": "ZGOODSRCPT_SRV.poitem"
+                },
+                "Ponum": "7000001362",
+                "Itemno": "00040",
+                "Article": "941094",
+                "Artdesc": "NORWEGIAN SASHIMI SALMON SKINLESS",
+                "Plant": "SCCC",
+                "Stloc": "0001",
+                "Ordqty": "2.000",
+                "Orduom": "KG",
+                "Baseqty": "2",
+                "Baseuom": "KG"
+            },
+            {
+                "__metadata": {
+                    "id": "http://patron.keells.lk:8000/sap/opu/odata/sap/ZGOODSRCPT_SRV/poitemSet(Ponum='7000001362',Itemno='00050')",
+                    "uri": "http://patron.keells.lk:8000/sap/opu/odata/sap/ZGOODSRCPT_SRV/poitemSet(Ponum='7000001362',Itemno='00050')",
+                    "type": "ZGOODSRCPT_SRV.poitem"
+                },
+                "Ponum": "7000001362",
+                "Itemno": "00050",
+                "Article": "120150",
+                "Artdesc": "07''x12''x130G PP PRINTED IN 01 COLOUR X",
+                "Plant": "SCCC",
+                "Stloc": "0001",
+                "Ordqty": "6.000",
+                "Orduom": "NO",
+                "Baseqty": "6",
+                "Baseuom": "NO"
+            },
+            {
+                "__metadata": {
+                    "id": "http://patron.keells.lk:8000/sap/opu/odata/sap/ZGOODSRCPT_SRV/poitemSet(Ponum='7000001362',Itemno='00060')",
+                    "uri": "http://patron.keells.lk:8000/sap/opu/odata/sap/ZGOODSRCPT_SRV/poitemSet(Ponum='7000001362',Itemno='00060')",
+                    "type": "ZGOODSRCPT_SRV.poitem"
+                },
+                "Ponum": "7000001362",
+                "Itemno": "00060",
+                "Article": "1261",
+                "Artdesc": "ACME ALUMINIUM FOIL 2.4 SQ. M",
+                "Plant": "SCCC",
+                "Stloc": "0001",
+                "Ordqty": "10.000",
+                "Orduom": "DZ",
+                "Baseqty": "120",
+                "Baseuom": "NO"
+            },
+            {
+                "__metadata": {
+                    "id": "http://patron.keells.lk:8000/sap/opu/odata/sap/ZGOODSRCPT_SRV/poitemSet(Ponum='7000001362',Itemno='00070')",
+                    "uri": "http://patron.keells.lk:8000/sap/opu/odata/sap/ZGOODSRCPT_SRV/poitemSet(Ponum='7000001362',Itemno='00070')",
+                    "type": "ZGOODSRCPT_SRV.poitem"
+                },
+                "Ponum": "7000001362",
+                "Itemno": "00070",
+                "Article": "100100",
+                "Artdesc": "Anchor Milk Powder 0.4lkG",
+                "Plant": "SCCC",
+                "Stloc": "0001",
+                "Ordqty": "5.000",
+                "Orduom": "CV",
+                "Baseqty": "120",
+                "Baseuom": "EA"
+            },
+            {
+                "__metadata": {
+                    "id": "http://patron.keells.lk:8000/sap/opu/odata/sap/ZGOODSRCPT_SRV/poitemSet(Ponum='7000001362',Itemno='00080')",
+                    "uri": "http://patron.keells.lk:8000/sap/opu/odata/sap/ZGOODSRCPT_SRV/poitemSet(Ponum='7000001362',Itemno='00080')",
+                    "type": "ZGOODSRCPT_SRV.poitem"
+                },
+                "Ponum": "7000001362",
+                "Itemno": "00080",
+                "Article": "100420",
+                "Artdesc": "SURF EXCEL W/POWDER X TRA CLEAN 1KG",
+                "Plant": "SCCC",
+                "Stloc": "0001",
+                "Ordqty": "3.000",
+                "Orduom": "CV",
+                "Baseqty": "45",
+                "Baseuom": "NO"
+            },
+            {
+                "__metadata": {
+                    "id": "http://patron.keells.lk:8000/sap/opu/odata/sap/ZGOODSRCPT_SRV/poitemSet(Ponum='7000001362',Itemno='00090')",
+                    "uri": "http://patron.keells.lk:8000/sap/opu/odata/sap/ZGOODSRCPT_SRV/poitemSet(Ponum='7000001362',Itemno='00090')",
+                    "type": "ZGOODSRCPT_SRV.poitem"
+                },
+                "Ponum": "7000001362",
+                "Itemno": "00090",
+                "Article": "941094",
+                "Artdesc": "NORWEGIAN SASHIMI SALMON SKINLESS",
+                "Plant": "SCCC",
+                "Stloc": "0001",
+                "Ordqty": "2.000",
+                "Orduom": "KG",
+                "Baseqty": "2",
+                "Baseuom": "KG"
+            },
+            {
+                "__metadata": {
+                    "id": "http://patron.keells.lk:8000/sap/opu/odata/sap/ZGOODSRCPT_SRV/poitemSet(Ponum='7000001362',Itemno='00100')",
+                    "uri": "http://patron.keells.lk:8000/sap/opu/odata/sap/ZGOODSRCPT_SRV/poitemSet(Ponum='7000001362',Itemno='00100')",
+                    "type": "ZGOODSRCPT_SRV.poitem"
+                },
+                "Ponum": "7000001362",
+                "Itemno": "00100",
+                "Article": "120150",
+                "Artdesc": "07''x12''x130G PP PRINTED IN 01 COLOUR X",
+                "Plant": "SCCC",
+                "Stloc": "0001",
+                "Ordqty": "6.000",
+                "Orduom": "NO",
+                "Baseqty": "6",
+                "Baseuom": "NO"
+            }
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "d": {
+        "__metadata": {
+            "id": "http://patron.keells.lk:8000/sap/opu/odata/sap/ZGOODSRCPT_SRV/articleSet(Ponum='7000001362',Article='100100')",
+            "uri": "http://patron.keells.lk:8000/sap/opu/odata/sap/ZGOODSRCPT_SRV/articleSet(Ponum='7000001362',Article='100100')",
+            "type": "ZGOODSRCPT_SRV.article"
+        },
+        "Ponum": "7000001362",
+        "Article": "100100"
+    }
+}
