@@ -4,7 +4,7 @@
 		<headerContent>
 			<OverflowToolbar>
 				<ToolbarSpacer/>
-				<Button id="btnViewItems" icon="sap-icon://menu2" press="onViewItems"/>
+				<Button id="btnViewItems" icon="sap-icon://menu2" tooltip="{i18n>lblPoItems}" press="onViewItems"/>
 			</OverflowToolbar>
 		</headerContent>
 		<content>
@@ -12,68 +12,68 @@
 				<f:SimpleForm editable="true" layout="ResponsiveGridLayout">
 					<Label text="{i18n>lblPoNo}">
 						<layoutData>
-							<l:GridData span="XL1 L1 M1 S3"/>
+							<l:GridData span="XL1 L1 M2 S3"/>
 						</layoutData>
 					</Label>
 					<Input id="inPoNo" type="Number" width="6.5rem" submit="onPoNoEnter">
 						<layoutData>
-							<l:GridData span="XL5 L5 M5 S9"/>
+							<l:GridData span="XL11 L11 M10 S9"/>
 						</layoutData>
 					</Input>
 					<Label text="{i18n>lblInvNo}">
 						<layoutData>
-							<l:GridData span="XL1 L1 M1 S3"/>
+							<l:GridData span="XL1 L1 M2 S3"/>
 						</layoutData>
 					</Label>
 					<Input id="inInvNo" submit="onInvNoEnter">
 						<layoutData>
-							<l:GridData span="XL5 L5 M5 S9"/>
+							<l:GridData span="XL11 L11 M10 S9"/>
 						</layoutData>
 					</Input>
 					<Label text="{i18n>lblArticle}">
 						<layoutData>
-							<l:GridData span="XL1 L1 M1 S3"/>
+							<l:GridData span="XL1 L1 M2 S3"/>
 						</layoutData>
 					</Label>
 					<Input id="inArticle" submit="onArticleEnter">
 						<layoutData>
-							<l:GridData span="XL5 L5 M5 S9"/>
+							<l:GridData span="XL11 L11 M10 S9"/>
 						</layoutData>
 					</Input>
 					<Label text="{i18n>lblArtDesc}">
 						<layoutData>
-							<l:GridData span="XL1 L1 M1 S3"/>
+							<l:GridData span="XL1 L1 M2 S3"/>
 						</layoutData>
 					</Label>
 					<Text id="txtArtDesc" text="{poModel>Artdesc}">
 						<layoutData>
-							<l:GridData span="XL5 L5 M5 S9"/>
+							<l:GridData span="XL11 L11 M10 S9"/>
 						</layoutData>
 					</Text>
 					<Label text="{i18n>lblSled}">
 						<layoutData>
-							<l:GridData span="XL1 L1 M1 S3"/>
+							<l:GridData span="XL1 L1 M2 S3"/>
 						</layoutData>
 					</Label>
 					<DatePicker id="dpSled" width="8rem" placeholder="ddmmyyyy" value="{poModel>Sled}" valueFormat="ddMMyyyy" displayFormat="ddMMyyyy"
 						change="onSledChanged">
 						<layoutData>
-							<l:GridData span="XL5 L5 M5 S9"/>
+							<l:GridData span="XL11 L11 M10 S9"/>
 						</layoutData>
 					</DatePicker>
 					<Label text="{i18n>lblOrdQty}">
 						<layoutData>
-							<l:GridData span="XL1 L1 M1 S3"/>
+							<l:GridData span="XL1 L1 M2 S3"/>
 						</layoutData>
 					</Label>
 					<Text id="txtOrdQty" text="{poModel>Ordqty} {poModel>Orduom} {poModel>Baseqty} {poModel>Baseuom}">
 						<layoutData>
-							<l:GridData span="XL5 L5 M5 S9"/>
+							<l:GridData span="XL11 L11 M10 S9"/>
 						</layoutData>
 					</Text>
 					<Label text="{i18n>lblGrnQty}">
 						<layoutData>
-							<l:GridData span="XL1 L1 M1 S3"/>
+							<l:GridData span="XL1 L1 M2 S3"/>
 						</layoutData>
 					</Label>
 					<Input id="inGrnQty" type="Number" value="{poModel>Grnqty}">
@@ -83,32 +83,32 @@
 					</Input>
 					<Text id="txtGrnUom" text="{poModel>Baseuom}">
 						<layoutData>
-							<l:GridData span="XL1 L1 M1 S2"/>
+							<l:GridData span="XL1 L1 M2 S2"/>
 						</layoutData>
 					</Text>
 					<Button id="btnOk" press="onOk" width="4rem">
 						<layoutData>
-							<l:GridData span="XL6 L6 M6 S3"/>
+							<l:GridData span="XL6 L6 M4 S3"/>
 						</layoutData>
 					</Button>
 					<Label text="{i18n>lblItem}">
 						<layoutData>
-							<l:GridData span="XL1 L1 M1 S3"/>
+							<l:GridData span="XL1 L1 M2 S3"/>
 						</layoutData>
 					</Label>
 					<Text id="txtItem" text="1 of 10">
 						<layoutData>
-							<l:GridData span="XL5 L5 M5 S9"/>
+							<l:GridData span="XL11 L11 M10 S9"/>
 						</layoutData>
 					</Text>
 					<Label text="{i18n>lblFinished}">
 						<layoutData>
-							<l:GridData span="XL1 L1 M1 S3"/>
+							<l:GridData span="XL1 L1 M2 S3"/>
 						</layoutData>
 					</Label>
 					<ProgressIndicator id="piCompleted" showValue="true" state="Success">
 						<layoutData>
-							<l:GridData span="XL5 L5 M5 S9"/>
+							<l:GridData span="XL11 L11 M10 S9"/>
 						</layoutData>
 					</ProgressIndicator>
 				</f:SimpleForm>
@@ -116,11 +116,11 @@
 		</content>
 		<footer>
 			<OverflowToolbar>
-				<Button text="{i18n>lblClear}" type="Reject" press="onClear"/>
-				<Button id="btnPrev" icon="sap-icon://navigation-left-arrow" press="onPrev"/>
+				<Button icon="sap-icon://cancel" tooltip="{i18n>lblClear}" width="5rem" type="Reject" press="onClear"/>
+				<Button id="btnPrev" icon="sap-icon://navigation-left-arrow" tooltip="{i18n>lblPrev}" width="5rem" press="onPrev"/>
 				<ToolbarSpacer/>
-				<Button id="btnNext" icon="sap-icon://navigation-right-arrow" press="onNext"/>
-				<Button text="{i18n>lblSave}" type="Emphasized" press="onSave"/>
+				<Button id="btnNext" icon="sap-icon://navigation-right-arrow" tooltip="{i18n>lblNext}" width="5rem" press="onNext"/>
+				<Button icon="sap-icon://save" tooltip="{i18n>lblSave}" width="5rem" type="Emphasized" press="onSave"/>
 			</OverflowToolbar>
 		</footer>
 	</Page>
