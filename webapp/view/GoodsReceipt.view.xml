@@ -4,7 +4,7 @@
 		<headerContent>
 			<OverflowToolbar>
 				<ToolbarSpacer/>
-				<Button id="btnViewItems" icon="sap-icon://menu2" tooltip="{i18n>lblPoItems}" press="onViewItems"/>
+				<Button id="btnViewItems" icon="sap-icon://menu2" tooltip="{i18n>lblPoItems}" press="onViewItems" visible="false"/>
 			</OverflowToolbar>
 		</headerContent>
 		<content>
@@ -117,9 +117,9 @@
 		<footer>
 			<OverflowToolbar>
 				<Button icon="sap-icon://cancel" tooltip="{i18n>lblClear}" width="5rem" type="Reject" press="onClear"/>
-				<Button id="btnPrev" icon="sap-icon://navigation-left-arrow" tooltip="{i18n>lblPrev}" width="5rem" press="onPrev"/>
+				<Button id="btnPrev" icon="sap-icon://navigation-left-arrow" tooltip="{i18n>lblPrev}" width="5rem" press="onPrev" visible="false"/>
 				<ToolbarSpacer/>
-				<Button id="btnNext" icon="sap-icon://navigation-right-arrow" tooltip="{i18n>lblNext}" width="5rem" press="onNext"/>
+				<Button id="btnNext" icon="sap-icon://navigation-right-arrow" tooltip="{i18n>lblNext}" width="5rem" press="onNext" visible="false"/>
 				<Button icon="sap-icon://save" tooltip="{i18n>lblSave}" width="5rem" type="Emphasized" press="onSave"/>
 			</OverflowToolbar>
 		</footer>

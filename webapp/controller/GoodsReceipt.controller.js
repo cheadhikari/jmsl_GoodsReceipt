@@ -223,6 +223,7 @@ sap.ui.define([
 					path: "/" + -1,
 					model: "poModel"
 				});
+				btnOk.setEnabled(false);
 				return;
 			}
 
@@ -311,6 +312,7 @@ sap.ui.define([
 			var oView = this.getView();
 			var oModel = oView.getModel("poModel");
 			var aData = oModel.getData();
+			var inArticle = this.byId("inArticle");
 			var btnOk = this.byId("btnOk");
 
 			if (aData[this._CurrentIndex].Status === "S") {
@@ -319,10 +321,11 @@ sap.ui.define([
 				btnOk.setType("Accept");
 				this._setInputEditable(true);
 			} else {
+				this._bindItem("E");
 				aData[this._CurrentIndex].Status = "S";
-				btnOk.setIcon("sap-icon://decline");
-				btnOk.setType("Reject");
 				this._setInputEditable(false);
+				inArticle.setValue("");
+				inArticle.focus();
 			}
 
 			oModel.refresh();
@@ -575,6 +578,7 @@ sap.ui.define([
 
 			var inPoNo = this.byId("inPoNo");
 			var inArticle = this.byId("inArticle");
+			var dpSled = this.byId("dpSled");
 			var sPonum = inPoNo.getValue();
 			var sArticle = inArticle.getValue();
 
@@ -590,6 +594,7 @@ sap.ui.define([
 				inArticle.setValue(oResult.Article);
 				that._setInputState(inArticle, "None", "");
 				that._bindItem(oResult.Article);
+				dpSled.focus();
 			});
 
 			oArticle.catch(function(oError) {
@@ -609,6 +614,8 @@ sap.ui.define([
 
 			var bValid = oEvent.getParameter("valid");
 			var oItem = aData[this._CurrentIndex];
+			
+			var inGrnQty = this.byId("inGrnQty");
 
 			if (!bValid) {
 				oItem.Status = "E";
@@ -618,6 +625,7 @@ sap.ui.define([
 				oItem.Status = "I";
 				oItem.SledError = "";
 				this._setInputState(oEvent.getSource(), "None", "");
+				inGrnQty.focus();
 			}
 
 		},
